@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-12" >
+        <button class="btn btn-primary" (click)="addTask()">Add Task</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12" *ngFor="let task of tasks;let i=index" >
+        <app-indvidual-task [Task]="task" (click)="getDetails(i)"></app-indvidual-task>
+    </div>
+</div>

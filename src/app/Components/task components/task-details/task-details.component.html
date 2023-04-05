@@ -1,0 +1,21 @@
+<div class="col-xs-12">
+    <div class="card row col-md-12">
+            <h3 class=" card-header">
+                {{task.name}}
+            </h3>
+            <div class="row col-md-12 card-text">
+                <p>{{task.description}}</p>
+            </div>
+            <div class="row col-md-12 card-text">
+                <p>Time : {{task.time}}</p>
+            </div>
+            <div class="row col-md-12 card-text">
+                <p>Date : {{task.date}}</p>
+            </div>
+            <div class="row col-md-4">
+                <p>
+                    <button class="btn btn-success" (click)="editTask()">Edit</button>
+                </p>
+            </div>
+    </div>
+</div>
